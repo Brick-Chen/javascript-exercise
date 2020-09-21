@@ -1,9 +1,9 @@
 function chooseMultiplesOfThree(collection) {
-  // TODO 1: 在这里写实现代码
+  return collection.filter(num => num % 3 === 0);
 }
 
 function chooseNoRepeatNumber(collection) {
-  // TODO 2: 在这里写实现代码
+  return collection.filter((element, index, arr) => index === 0 || arr[index] !== arr[index - 1]);
 }
 
 export { chooseMultiplesOfThree, chooseNoRepeatNumber };
