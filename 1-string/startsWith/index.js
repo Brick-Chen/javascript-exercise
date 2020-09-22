@@ -1,4 +1,4 @@
 export default function collectCarNumberCount(collection) {
   // TODO 7: 在这里写实现代码
-  return collection.filter(s => s.includes('粤A')).length;
+  return collection.filter(s => s.startsWith('粤A')).length;
 }
