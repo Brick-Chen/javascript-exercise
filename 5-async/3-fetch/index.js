@@ -5,7 +5,7 @@ function fetchData(url) {
     if (response.status === 200) {
       return response.json();
     }
-    return response.statusText;
+    return Promise.reject(response.statusText);
   });
   // end -->
 }
